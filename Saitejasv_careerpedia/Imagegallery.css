@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+  }
+  
+  body{
+    background-color: black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Image-Container{
+
+    width:55%;
+    height:auto;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap:30px;
+    padding:20px 0px;
+    border: 5px double wheat;
+    /* border-radius:15px; */
+
+  }
+  .Image-Container h1{
+    color: azure;
+    font-size: 2rem;
+  }
+  .img-gallery {
+    width:50%;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    grid-gap: 30px;
+    border: 5px double whitesmoke;
+  }
+  .img-gallery img {
+    width:175px;
+    height:170px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  .img-gallery img:hover {
+    /* transform: rotate(45deg); */
+    transform: scale(1.2);
+  }
+  /* .book-cover{
+
+
+  } */
+  .book-cover {
+    width: 100%;
+    height: 100vh;
+    background: rgba(151, 148, 148, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content:space-evenly;
+    align-items: center;
+    z-index: 100;
+    
+  }
+  
+  .book-cover img {
+    width: 90%;
+    max-width: 200px;
+  }
+  
+  .book-cover span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    font-family: sans-serif;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .infodiv{
+    width: 35%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+  }
+  #quantity{
+    padding:5px 5px;
+    background-color: antiquewhite;
+    
+  }
+ button{
+  padding:5px;
+  background-color:orange;
+  color:#fff;
+  cursor:pointer;
+ }
+
+ .Invoice_Div{
+  width:700px;
+  height:500px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  margin:50px 350px;
+ }
+
+ #displayitemsadded{
+  text-align: center;
+  color:green;
+ }
+ 
+#finalprice1{
+  text-align: center;
+  color:red;
+}
+.Invoice_Div{
+  background-color: antiquewhite;
+  overflow: scroll;
+}
+ 

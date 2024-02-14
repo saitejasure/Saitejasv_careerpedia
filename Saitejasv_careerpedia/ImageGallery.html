@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM_project</title>
+    <link rel="stylesheet" href="Imagegallery.css">
+</head>
+<body>
+
+<div class="Image-Container">
+
+ <h1>Select Your Items</h1>
+ <div class="img-gallery">
+ <img src="./Dom_Project_images/0.webp" alt="book" id="book">
+ <img src="./Dom_Project_images/1.webp" alt="camera" id="camera">
+ <img src="./Dom_Project_images/2.webp" alt="ceilingfan" id="ceilingfan">
+ <img src="./Dom_Project_images/3.webp" alt="pendrive" id="pendrive">
+ <img src="./Dom_Project_images/4.webp" alt="shoe" id="shoe">
+ <img src="./Dom_Project_images/5.webp" alt="tablefan" id="tablefan">
+</div>
+
+ </div>
+ 
+<div class="book-cover" id="bookcover">
+    <img src="./Dom_Project_images/0.webp" alt="" id="bookcoverimg">
+    <div class="infodiv">
+        <h1 id="heading">Reasoning IQ Book For SSC CGLS</h1>
+        <h3>Item Price:RS<mark id="rate">350</mark>/-</h3>
+        Quantity:<input type="text" placeholder="enter the quantity here" id="quantity" name="quantity"> <br>
+        <button id="button">Add to Cart</button>
+       
+    </div>
+    <span>X</span>
+</div>
+
+
+
+
+<div class="Invoice_Div" id="Invoice">
+  
+ <h2 id="displayitemsadded"></h2>
+ <h1 id="finalprice1"></h1>
+   
+
+</div>
+
+
+    <script src="imagegallery.js">
+       
+    </script>
+</body>
+</html>
